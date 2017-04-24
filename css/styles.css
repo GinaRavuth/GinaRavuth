@@ -18,8 +18,62 @@ time, mark, audio, video {
   vertical-align: baseline;
   background: transparent; }
 
+body {
+  padding: 10px 45px 45px 45px; }
+
+* {
+  font-family: "Times New Roman";
+  letter-spacing: 2px; }
+
+p {
+  font-family: "Times New Roman";
+  font-size: 36px; }
+
+h1, h2, h4 {
+  font-weight: 100; }
+
+h1 {
+  font-size: 48px;
+  color: #000000; }
+
+h2 {
+  font-size: 36px;
+  font-weight: 100; }
+
+h4 {
+  font-size: 18px;
+  color: #000000; }
+
+header {
+  padding-top: 10px;
+  padding-bottom: 15px; }
+  header a {
+    color: #000000;
+    text-decoration: none; }
+  header .logo {
+    text-transform: uppercase; }
+
 section {
   height: 100vh;
-  background: #0000ff; }
+  background: #f3f3f3; }
+  section .about-section {
+    bottom: 30px;
+    left: 90px;
+    position: absolute;
+    right: 90px; }
+  section .work-section {
+    margin-top: 30px;
+    left: 90px;
+    position: absolute;
+    right: 90px; }
+
+.work {
+  background: #ffffff; }
+
+.greeting {
+  border-bottom: 1px solid #434343;
+  display: inline-block;
+  padding-bottom: 5px;
+  margin-bottom: 5px; }
 
 /*# sourceMappingURL=styles.css.map */
