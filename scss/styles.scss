@@ -3,6 +3,9 @@ $black: #000000;
 $blue:  #0000ff; 
 $grey:  #f3f3f3; 
 $dark-grey: #434343; 
+$green: #C1FD33;
+$orange: #FD5F00;
+$box-height: 40vh;
 $times: 'Times New Roman';
 $eb: 'EB Garamond';
 @mixin position {
@@ -87,11 +90,17 @@ section {
     .work-section {
         margin-top: 30px;
         @include position;
+        .greeting {
+            margin-bottom: 20px;
+        }
+    }
+    .contact-section {
+        @extend .work-section;
     }
 }
 
 .work {
-    background: $white;
+    background: $white; 
 }
 
 .greeting {
@@ -99,4 +108,34 @@ section {
     display: inline-block;
     padding-bottom: 5px;
     margin-bottom: 5px;
+}
+
+.work {
+    .work-wrapper {
+        float: left; 
+        display: inline-block;
+        &.blue-box {
+            width: 60%;
+            height: $box-height;
+            background: $blue;
+        }
+        &.black-box {
+            width: 40%;
+            height: $box-height;
+            background: $black;
+        }
+        &.green-box {
+            width: 45%;
+            height: $box-height;
+            background: $green;
+        }
+        &.orange-box {
+            width: 55%;
+            height: $box-height;
+            background: $orange;
+        }
+        & h4 {
+            padding:30px;
+        }
+    }
 }

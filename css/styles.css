@@ -61,11 +61,13 @@ section {
     left: 90px;
     position: absolute;
     right: 90px; }
-  section .work-section {
+  section .work-section, section .contact-section {
     margin-top: 30px;
     left: 90px;
     position: absolute;
     right: 90px; }
+    section .work-section .greeting, section .contact-section .greeting {
+      margin-bottom: 20px; }
 
 .work {
   background: #ffffff; }
@@ -75,5 +77,27 @@ section {
   display: inline-block;
   padding-bottom: 5px;
   margin-bottom: 5px; }
+
+.work .work-wrapper {
+  float: left;
+  display: inline-block; }
+  .work .work-wrapper.blue-box {
+    width: 60%;
+    height: 40vh;
+    background: #0000ff; }
+  .work .work-wrapper.black-box {
+    width: 40%;
+    height: 40vh;
+    background: #000000; }
+  .work .work-wrapper.green-box {
+    width: 45%;
+    height: 40vh;
+    background: #C1FD33; }
+  .work .work-wrapper.orange-box {
+    width: 55%;
+    height: 40vh;
+    background: #FD5F00; }
+  .work .work-wrapper h4 {
+    padding: 30px; }
 
 /*# sourceMappingURL=styles.css.map */
