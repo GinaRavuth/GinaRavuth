@@ -3,50 +3,51 @@
 <head>
 <meta charset="UTF-8">
 <title>Gina Ravuth</title>
+<!--[if lte IE 6]>
+	<style>#top, #bottom, #left, #right { display: none; }</style>
+<![endif]-->
+<link rel="stylesheet" type="text/css" href="css/reset.css">
 <link href="css/styles.css" rel="stylesheet" type="text/css">
-<link href="https://fonts.googleapis.com/css?family=EB+Garamond" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Inconsolata|Playfair+Display:400,700i" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="js/script.js"> </script>
 </head>
 <body>
-<header>
-   <a href="#"><h3 class="logo">Gina Ravuth</h3></a>
+<header role="menubar">
+    <nav role="navgiation">
+        <ul>
+            <li><a href="index.html">About</a><span> /</span></li>
+            <li><a href="#portfolio">Portfolio</a><span> /</span</li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
 </header>
-<section class="about">
-    <div class="about-section">
-    <h4><span class="greeting">H</span>i,</h4>
-        <h1>
-            I'm Gina. <br />
-            A front-end developer <br />
-            based in Brooklyn, New York. 
-        </h1>
-    </div>
-</section>
-<section class="work">
-    <div class="work-section">
-        <h4><span class="greeting">W</span>ork</h4>
-        <div class="work-wrapper blue-box">
-            <h4>04 <br />GinaRavuth.com</h4>
-            <p></p>
-        </div>
-        <div class="work-wrapper black-box">
-            <h4>03 <br />10x16.com Page</h4>
-            <p></p>
-        </div>
-        <div class="work-wrapper green-box">
-            <h4>02 <br />Ordino</h4>
-            <p></p>        
-        </div>
-        <div class="work-wrapper orange-box">
-            <h4>01 <br />GSU Development</h4>
-            <p></p>
-        </div>
-    </div>
-</section>
-<section>
-    <div class="contact-section">
-        <h4><span class="greeting">Le</span>t's Talk</h4>
-        <div>For inquiries, please email me at <a href="mailto:ginaravuth@gmail.com">ginaravuth@gmail.com</a></div>
-    </div>
-</section>
+
+<main role="main">
+    <section class="about">
+        <h1>Gina Ravuth</h1>
+        <h2>UI Developer</h2>
+        <p>Hi. I’m Gina, a User Interface Developer based in Brooklyn, NY. I have a background in Information Technology from Georgia Southern University. Cool animations and transitions are fun things I like to try and develop. I also like live music, fat cats and reading about the Internet of Things. <br />
+       <a href="#" class="more-btn">>> Learn More About Me</a> </p>    
+    </section>
+    <section class="portfolio">
+        
+    </section>
+    <section class="contact">
+        <ol>
+            <li>Hover Effects</li>
+            <li>Ordino</li>
+            <li>Library User Test</li>
+            <li>GSU Website Revamp</li>
+        </ol> 
+    </section>
+</main>
+
+<div class="page-border">
+    <div class="pb-top"></div>
+    <div class="pb-bottom"></div>
+    <div class="pb-left"></div>
+    <div class="pb-right"></div>
+</div>
 </body>
 </html>

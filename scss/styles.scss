@@ -1,18 +1,8 @@
-$white: #ffffff;
-$black: #000000;
-$blue:  #0000ff; 
-$grey:  #f3f3f3; 
-$dark-grey: #434343; 
-$green: #C1FD33;
-$orange: #FD5F00;
-$box-height: 40vh;
-$times: 'Times New Roman';
-$eb: 'EB Garamond';
-@mixin position {
-    left: 90px;
-    position: absolute;
-    right: 90px;
-}
+$blue: #2a64f8; 
+$incon: 'Inconsolata', monospace;
+$play: 'Playfair Display', serif;
+
+$mobile: 'max-width: 448px';
 //reset 
 html, body, div, span, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -36,106 +26,103 @@ time, mark, audio, video {
 }
 
 body {
-    padding: 10px 45px 45px 45px;
+    padding: 50px 100px;
+} 
+
+main {
+    margin-top: 40px;
+    position: relative;
 }
 
-* {
-    font-family: $times;
-    letter-spacing: 2px;
-}
-
-p {
-    font-family: $times;
-    font-size: 36px;
-}
-
-h1, h2, h4 {
-    font-weight: 100;
-}
-
-h1 {
-    font-size: 48px;
-    color: $black;
-}
-
-h2 {
-    font-size: 36px;
-    font-weight: 100;
-}
-
-h4 {
-    font-size: 18px;
-    color: $black;
-}
-
-header {
-    padding-top: 10px;
-    padding-bottom: 15px;
-    a {
-        color: $black;
-        text-decoration: none;
+nav {
+    ul{
+        position: fixed; 
+        right: 80px;
+        li {
+            list-style-type: none;
+            float: left;
+            display: inline;
+            margin-right:  10px;
+            font-family: $incon;
+        }
     }
-    .logo {
-        text-transform: uppercase;
+}
+
+a {
+    text-decoration: none;
+    color: $blue;
+    transition: .3s;
+    &:hover {
+        font-style: italic;
+        background: $blue;
+        color: #fff;
     }
+}
+
+.about {
+    position: relative;
+    bottom: -30px;
 }
 
 section {
-    height: 100vh;
-    background: $grey;
-    .about-section {
-        bottom: 30px;
-        @include position;
-    }
-    .work-section {
-        margin-top: 30px;
-        @include position;
-        .greeting {
-            margin-bottom: 20px;
+        h1 {
+            font-size: 96px;
+            font-style: italic;
+            letter-spacing: 1px;
+            font-family: $play !important;
+            color: $blue;
+            text-transform: lowercase;
+            font-weight: 100;
+            display: inline-block;
         }
+        h2 {
+            display: inline-block;
+            letter-spacing: 1px;
+            font-weight: 100;
+            font-family: $incon;
+            font-style: italic;
+            font-size: 18px;
+            margin-right: 20px;
+        }
+        p {
+            font-family: $incon;
+            width: calc(60% - 50px);
+            line-height: 1.8em;
+            text-align: justify;
+            padding-top: 10px;
+        }
+}
+
+.page-border {
+    .pb-top, .pb-bottom, .pb-left, .pb-right {
+        position: fixed; 
+        background: #fff;
     }
-    .contact-section {
-        @extend .work-section;
+    .pb-top, .pb-bottom {
+       left: 0;
+       right: 0;
+       height: 20px;
+    }
+    .pb-top {
+        top: 0;
+        border-bottom: 1px solid $blue;
+    }
+    .pb-bottom {
+        bottom: 0;
+        border-top: 1px solid $blue;
+    }
+    .pb-left, .pb-right {
+       top: 0;
+       bottom: 0;
+       width: 20px;
+    }
+    .pb-left {
+        left: 0;
+        border-right: 1px solid $blue;
+    }
+    .pb-right {
+        right: 0;
+        border-left: 1px solid $blue;
     }
 }
 
-.work {
-    background: $white; 
-}
-
-.greeting {
-    border-bottom: 1px solid $dark-grey;
-    display: inline-block;
-    padding-bottom: 5px;
-    margin-bottom: 5px;
-}
-
-.work {
-    .work-wrapper {
-        float: left; 
-        display: inline-block;
-        &.blue-box {
-            width: 60%;
-            height: $box-height;
-            background: $blue;
-        }
-        &.black-box {
-            width: 40%;
-            height: $box-height;
-            background: $black;
-        }
-        &.green-box {
-            width: 45%;
-            height: $box-height;
-            background: $green;
-        }
-        &.orange-box {
-            width: 55%;
-            height: $box-height;
-            background: $orange;
-        }
-        & h4 {
-            padding:30px;
-        }
-    }
-}
