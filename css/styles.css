@@ -48,6 +48,15 @@ a {
   position: relative;
   bottom: -30px; }
 
+.portfolio, .contact {
+  display: none; }
+
+.contact li, .contact h2 {
+  line-height: 1.6; }
+.contact h2 {
+  display: block;
+  font-style: normal; }
+
 section h1 {
   font-size: 96px;
   font-style: italic;
@@ -71,6 +80,32 @@ section p {
   line-height: 1.8em;
   text-align: justify;
   padding-top: 10px; }
+section li {
+  font-family: "Inconsolata", monospace; }
+
+.portfolio ol {
+  padding-top: 10px; }
+
+#ordino-section {
+  padding-bottom: 20px; }
+  #ordino-section h2 {
+    color: #2a64f8;
+    font-style: normal;
+    padding: 20px 0px;
+    font-size: 24px; }
+  #ordino-section li {
+    line-height: 1.8; }
+  #ordino-section a {
+    padding: 20px 30px;
+    background: #fff;
+    border: 1px solid #2a64f8;
+    color: #2a64f8;
+    transition: .3s;
+    font-style: italic;
+    display: inline-block; }
+    #ordino-section a:hover {
+      background: #2a64f8;
+      color: #fff; }
 
 .page-border .pb-top, .page-border .pb-bottom, .page-border .pb-left, .page-border .pb-right {
   position: fixed;

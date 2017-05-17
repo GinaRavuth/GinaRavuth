@@ -3,6 +3,7 @@ $incon: 'Inconsolata', monospace;
 $play: 'Playfair Display', serif;
 
 $mobile: 'max-width: 448px';
+
 //reset 
 html, body, div, span, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -64,6 +65,21 @@ a {
     bottom: -30px;
 }
 
+.portfolio, .contact {
+    display: none;
+}
+
+.contact {
+    li, h2 {
+        line-height: 1.6;
+    }
+    h2 {
+        display: block;
+        font-style: normal;
+    }
+}
+
+
 section {
         h1 {
             font-size: 96px;
@@ -91,6 +107,42 @@ section {
             text-align: justify;
             padding-top: 10px;
         }
+        li {
+            font-family: $incon;
+        }
+}
+
+.portfolio {
+    ol {
+        padding-top: 10px;
+    }
+}
+
+//portfolios-ordino
+#ordino-section {
+        padding-bottom: 20px;
+        h2 {
+            color: $blue;
+            font-style: normal;
+            padding: 20px 0px;
+            font-size: 24px;
+        }
+        li {
+            line-height: 1.8;
+        }
+    a {
+        padding: 20px 30px;
+        background: #fff;
+        border: 1px solid $blue;
+        color: $blue;
+        transition: .3s;
+        font-style: italic;
+        display: inline-block;
+        &:hover {
+            background: $blue;
+            color: #fff;
+        }
+    }
 }
 
 .page-border {
